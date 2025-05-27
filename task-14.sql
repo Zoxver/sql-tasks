@@ -1,0 +1,1 @@
+SELECT c.class, s.name, c.country FROM Classes as c JOIN Ships as s ON s.class=c.class WHERE c.numGuns >= 10;

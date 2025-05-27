@@ -1,0 +1,1 @@
+SELECT maker FROM Product WHERE type IN ('PC', 'LAPTOP') EXCEPT SELECT maker FROM Product WHERE type='LAPTOP';

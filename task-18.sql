@@ -1,0 +1,1 @@
+SELECT DISTINCT pd.maker, pt.price FROM Product as pd JOIN Printer as pt On pt.model=pd.model WHERE pt.color='y' AND pt.price=(SELECT MIN(price) FROM Printer WHERE color='y');

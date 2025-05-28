@@ -1,0 +1,1 @@
+SELECT DISTINCT pd.type, l.model, l.speed FROM Product as pd, Laptop as l WHERE l.speed < ALL(SELECT speed FROM PC) AND pd.type='Laptop';

@@ -1,0 +1,1 @@
+SELECT pd.maker FROM Product as pd JOIN PC as pc ON pc.model=pd.model WHERE pc.speed >= 750 INTERSECT SELECT pd.maker FROM Product as pd JOIN Laptop as l ON l.model=pd.model WHERE l.speed >= 750;

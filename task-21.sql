@@ -1,0 +1,1 @@
+SELECT pd.maker, MAX(pc.price) FROM Product as pd JOIN PC as pc ON pd.model=pc.model WHERE pd.type='PC' GROUP BY pd.maker HAVING COUNT(pd.model) >= 1;

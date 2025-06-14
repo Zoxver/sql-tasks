@@ -1,0 +1,2 @@
+with battle_out as (select b.name, b.date, o.result, o.ship from Battles b, Outcomes o where o.battle = b.name)
+select distinct ship from battle_out as out where  out.result = 'damaged' and exists (select * from battle_out ot where ot.ship = out.ship and out.date < ot.date);

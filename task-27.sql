@@ -1,0 +1,1 @@
+SELECT pd.maker, AVG(p.hd) FROM PC AS p JOIN Product AS pd ON pd.model=p.model WHERE pd.maker IN (SELECT maker FROM Product WHERE type='Printer') GROUP BY pd.maker;

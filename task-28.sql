@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM (SELECT maker, COUNT(*) FROM Product GROUP BY maker HAVING COuNT(*)=1) AS t;

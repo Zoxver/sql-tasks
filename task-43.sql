@@ -1,0 +1,1 @@
+select name from Battles where date_part('year', date) not in (select launched from Ships where launched is not null);

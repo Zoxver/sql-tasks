@@ -1,0 +1,1 @@
+select distinct battle from Classes c join Ships s on s.class = c.class join Outcomes o on c.class=o.ship or s.name=o.ship where c.class = 'Kongo';
